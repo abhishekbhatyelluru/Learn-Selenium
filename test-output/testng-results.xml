@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="19" total="22" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-15T16:45:20 IST" name="Loan Department" finished-at="2023-01-15T16:45:20 IST" duration-ms="54">
+    <groups>
+      <group name="smokee">
+        <method signature="day1.asdf()[pri:0, instance:testngdemo.day1@5d534f5d]" name="asdf" class="testngdemo.day1"/>
+        <method signature="day3.mobileappscarloan()[pri:0, instance:testngdemo.day3@3c77d488]" name="mobileappscarloan" class="testngdemo.day3"/>
+        <method signature="day5.newcarloanbmw()[pri:0, instance:testngdemo.day5@4145bad8]" name="newcarloanbmw" class="testngdemo.day5"/>
+      </group> <!-- smokee -->
+    </groups>
+    <test started-at="2023-01-15T16:45:20 IST" name="regression" finished-at="2023-01-15T16:45:20 IST" duration-ms="54">
+      <class name="testngdemo.day3">
+        <test-method signature="mobileappscarloan()[pri:0, instance:testngdemo.day3@3c77d488]" started-at="2023-01-15T16:45:20 IST" name="mobileappscarloan" finished-at="2023-01-15T16:45:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileappscarloan -->
+      </class> <!-- testngdemo.day3 -->
+      <class name="testngdemo.day1">
+        <test-method signature="asdf()[pri:0, instance:testngdemo.day1@5d534f5d]" started-at="2023-01-15T16:45:20 IST" name="asdf" finished-at="2023-01-15T16:45:20 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- asdf -->
+      </class> <!-- testngdemo.day1 -->
+      <class name="testngdemo.day5">
+        <test-method signature="newcarloanbmw()[pri:0, instance:testngdemo.day5@4145bad8]" started-at="2023-01-15T16:45:20 IST" name="newcarloanbmw" finished-at="2023-01-15T16:45:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newcarloanbmw -->
+      </class> <!-- testngdemo.day5 -->
+    </test> <!-- regression -->
+  </suite> <!-- Loan Department -->
+</testng-results>

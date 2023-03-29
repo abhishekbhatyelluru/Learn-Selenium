@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Loan Department">
+   
+   <listeners>
+   <listener class-name="testngdemo.Listenerss"></listener>
+   </listeners>
+
+ <!-- 
+   <test thread-count="5" name="Personal Loan">
+    <packages>
+        <package name="testngdemo"></package>     prints all the classes that are related to this package
+    </packages>
+  </test>
+ 
+ --> 
+  
+  
+  <test name="regression">
+   <groups>
+    <run>
+      <include name="smokee"></include>    <!-- Selecting perticular methods and add to any group and print-->
+    </run>
+   </groups>
+  <classes>
+    <class name="testngdemo.day1"/> 
+    <class name="testngdemo.day2"/>    
+    <class name="testngdemo.day3"/>
+    <class name="testngdemo.day4"/>
+    <class name="testngdemo.day5"/>
+    <class name="testngdemo.day6"/>
+  </classes>
+  </test>
+
+
+</suite> <!-- Suite -->

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Loan Department">
+  
+     <listeners>
+   <listener class-name="testngdemo.Listenerss"></listener>
+   </listeners>
+
+ <parameter name="URL" value="abhiacademy.com"></parameter>  <!-- This appplied to whole suit...We can declare inside test aslo...Inside test means applicable to test only-->
+
+  <test thread-count="5" name="Personal Loan">
+    <classes>
+      <class name="testngdemo.day1"/> 
+      <class name="testngdemo.day2"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Car Loan">
+  <classes>
+  <class name="testngdemo.day3">
+  <methods>
+  <include name="mobilecarloan"></include>
+  <exclude name="mobile.*"></exclude>  <!--Excludes the method that starts with "mobile" -->
+  </methods>
+  </class>
+  <class name="testngdemo.day5"/>
+  </classes>
+  </test>
+
+  
+  <test name="Home Loan">
+   <parameter name="URL" value="homeloanacademy.com"></parameter> <!-- parameter Applied to test level only-->
+   <parameter name="username" value="123456"></parameter>         <!-- passing multiple parameter-->
+  <classes>
+  <class name="testngdemo.day4">
+  <methods>
+  <exclude name="apihomeloan"></exclude>
+  </methods>
+  </class>
+  </classes>
+  </test>
+  
+  
+  <test name="Bank Loan">
+  <classes>
+  <class name="testngdemo.day6"></class>
+  </classes>
+  </test>
+  
+
+
+</suite> <!-- Suite -->
